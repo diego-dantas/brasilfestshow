@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Brasil Fest Show</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+  
+  <script src="./js/countDown.min.js"></script>
+  <link href="./css/countdown.css" media="all" rel="stylesheet" />
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/customStyle.css" rel="stylesheet">
+</head>
+
+<body id="timeOutEvent">
+  <!-- Time Out Start -->
+  <div class="container-fluid w-100 h-100">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 text-center">
+        <img class="w-50" src="./images/LOGO.png" alt="Expô Birigui Fest Show">
+      </div>
+      <div class="col-sm-12 col-md-6 p-5 mt-5">
+          <div class="container3"></div>
+      </div>
+      <div class="col-md-3 text-center mt-5"></div>
+      <div class="col-md-6 text-center mt-5">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe max-width="567" max-height="216" src="https://www.youtube.com/embed/H61Rujy-ujg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+      </div>  
+      <div class="col-md-3 text-center mt-5"></div>          
+    </div>
+  </div>
+  <!--/ Time Out stop -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="./js/customJS.js"></script> </script>
+  <script>
+    var cd = new Countdown({
+      cont: document.querySelector('.container3'),
+        date: {
+                day: 1,
+                month: 8,
+                year: 2019,
+                hour: 22,
+                minute: 00,
+                second: 00,
+              },
+        endDate: 1565312400000,
+        outputTranslation: {
+            day: 'Dias',
+            hour: 'Horas',
+            minute: 'Minutos',
+            second: 'Segundos',
+        },
+        endCallback: null,
+        outputFormat: 'day|hour|minute|second',
+      });
+    cd.start();     
+  </script>
+
+</body>
+</html>
